@@ -1,0 +1,87 @@
+Cost of full panel: $ 53.85
+Cost of rodent panel: $ 25.71
+Cost of cardiac panel: $ 38.25
+Cost of lipid panel: $ 36.72
+Cost of liver panel: $ 25.20
+Cost of kidney panel: $ 24.10
+Cost of urine full panel: $ 34.04
+Cost of electrolytes: $ 28.60
+
+CLINICAL CHEMISTRY PRICE LIST: 
+
+Individual tests: 
+The cost of GGT is: $ 13.65
+The cost of LDH is: $ 13.67
+The cost of LDL is: $ 25.75
+The cost of CHOL is: $ 13.65
+The cost of ALB is: $ 13.67
+The cost of TP is: $ 13.67
+The cost of PHOS is: $ 13.65
+The cost of TOTAL BILIRUBIN is: $ 13.67
+The cost of CREA is: $ 13.72
+The cost of CO2 is: $ 13.64
+The cost of ALKP is: $ 13.67
+The cost of TOTAL PROTEIN IN URINE is: $ 15.23
+The cost of HDL is: $ 24.08
+The cost of GLUCOSE is: $ 13.65
+The cost of UREAL is: $ 13.65
+The cost of CKL is: $ 14.09
+The cost of CALCIUM is: $ 13.67
+The cost of DIRECT BILIRUBIN is: $ 13.66
+The cost of MG is: $ 13.71
+The cost of CLEANER CASSETTE is: $ 13.88
+The cost of AST is: $ 13.67
+The cost of ALT is: $ 13.67
+The cost of TRIG is: $ 13.67
+
+Non-BCM (academic) prices: 
+GGT: $17.06
+LDH: $17.09
+LDL: $32.19
+CHOL: $17.06
+ALB: $17.09
+TP: $17.09
+PHOS: $17.06
+TOTAL BILIRUBIN: $17.09
+CREA: $17.16
+CO2: $17.05
+ALKP: $17.09
+TPUC: $19.04
+HDL: $30.11
+GLU: $17.06
+UREAL: $17.06
+CKL: $17.62
+CA: $17.09
+DIRECT BILIRUBIN: $17.08
+MG: $17.13
+CLEANER: $17.35
+AST: $17.08
+ALT: $17.09
+TRIG: $17.09
+
+Non-academic institution prices:
+GGT: $20.47
+LDH: $20.50
+LDL: $38.62
+CHOL: $20.47
+ALB: $20.50
+TP: $20.50
+PHOS: $20.47
+TOTAL BILIRUBIN: $20.50
+CREA: $20.59
+CO2: $20.46
+ALKP: $20.50
+TPUC: $22.85
+HDL: $36.13
+GLU: $20.47
+UREAL: $20.47
+CKL: $21.14
+CA: $20.50
+DIRECT BILIRUBIN: $20.49
+MG: $20.56
+CLEANER: $20.82
+AST: $20.50
+ALT: $20.50
+TRIG: $20.50
+***********************************************
+

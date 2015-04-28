@@ -1,0 +1,59 @@
+Purchase Price List
+CONTROLS
+cfas urine: $ 292.57
+cfas: $75.05
+Precipath lipid: $ 76.43
+Precinorm U: $ 36.39
+Precipath U: $36.66
+cfas lipid: $57.38
+CO2 calibrator: $66.21
+CO2 normal: $86.18
+CO2 abnormal: $85.98
+Bio Rad 1: $ 126.00
+Bio Rad 2: $ 126.00
+
+ISE COSTS: 
+Activator: $97.20
+Deproteinizer: $ 23.40
+Solution One: $ 23.40
+Solution 2: $ 23.40
+Saline diluent: $ 64.10
+Etcher: $ 23.40
+ISE direct: $ 95.44
+ISE indirect: $ 172.00
+ISE reference: $ 95.44
+Sodium electrode: $ 20.19
+Chloride electrode: $ 20.19
+Potassium electrode: $ 20.19
+
+MISCELLANEOUS COSTS: 
+Microcuvettes: $ 471.40
+Sample Cups: $ 51.66
+Cleaner solution: $ 44.14
+Waste Containers: $ 132.42
+
+CASSETTES PRICE LIST: 
+GGT: $ 25.22
+LDH: $ 25.69
+LDL: $ 590.46
+CHOL: $ 26.23
+ALB: $ 25.68
+TP: $ 25.68
+PHOS: $ 15.77
+T_BILS: $ 21.40
+CREA: $ 35.10
+CO2: $ 13.86
+ALKP: $ 17.12
+TPUC: $ 247.60
+HDL: $ 341.94
+GLU: $ 50.90
+UREAL: $ 31.51
+CKL: $ 101.82
+CA: $ 25.68
+D_BILS: $ 27.80
+MG: $ 21.40
+CLEANER: $ 44.14
+AST: $ 41.43
+ALT: $ 42.80
+TRIG: $ 21.40
+

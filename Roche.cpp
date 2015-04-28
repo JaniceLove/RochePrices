@@ -22,7 +22,7 @@ double maintenance();
 
 //variables for functions 
 double purchase_price = 84500; //from paperwork
-		int integraLife = 20; /*simple depreciation from 
+		int integraLife = 8; /*simple depreciation from 
 							  wikieducator.org/cost_and_financing_in
 							  _open_schooling/capital_costs/depreciating_
 							  capital_costs */ 
@@ -226,8 +226,8 @@ int main()
        ofstream myFile;
 	   ofstream listFile;
 	 
-       myFile.open("M:\\PathLab\\Costs\\Roche test.txt");
-	   listFile.open("M:\\PathLab\\Costs\\overhead.txt");
+       myFile.open("Roche test.txt");
+	   listFile.open("overhead.txt");
 	 
 	   listFile << fixed << setprecision(2); 
 	   myFile << fixed << setprecision(2); 
@@ -514,8 +514,111 @@ myFile << "The cost of AST is: $ " << ast1 << endl;
 myFile << "The cost of ALT is: $ " << alt1 << endl;
 myFile << "The cost of TRIG is: $ " << trig1 << endl;
 myFile << endl;
-myFile << "******************************************************" 
-			<< endl;
+
+//**********************************************************************
+
+//non-BCM prices
+	double a = costNONBCM (ggt1);
+	double b = costNONBCM (ldh1);
+	double c = costNONBCM (ldl1);
+	double d = costNONBCM (chol1);
+	double e = costNONBCM (alb1);
+	double f =  costNONBCM (tp1);
+	double g =  costNONBCM (phos1);
+	double h =  costNONBCM (t_bils1);
+	double i =  costNONBCM (crea1);
+	double j =  costNONBCM (co21);
+	double k =  costNONBCM (alkp1);
+	double l =  costNONBCM (tpuc1);
+	double m =  costNONBCM (hdl1);
+	double n =  costNONBCM (glu1);
+	double o =  costNONBCM (ureal1); 
+	double p =  costNONBCM (ckl1);
+	double q =  costNONBCM (ca1);
+	double r =  costNONBCM (d_bils1);
+	double s =  costNONBCM (mg1);
+	double t =  costNONBCM (cleaner1);
+	double u =  costNONBCM (ast1);
+	double v =  costNONBCM (alt1);
+	double w =  costNONBCM (trig1);
+
+//non-academic prices 
+	double aa = costOUTSIDE (ggt1);
+	double bb = costOUTSIDE (ldh1);
+	double cc = costOUTSIDE (ldl1);
+	double dd = costOUTSIDE (chol1);
+	double ee = costOUTSIDE(alb1);
+	double ff =  costOUTSIDE (tp1);
+	double gg =  costOUTSIDE (phos1);
+	double hh =  costOUTSIDE (t_bils1);
+	double ii =  costOUTSIDE(crea1);
+	double jj =  costOUTSIDE (co21);
+	double kk =  costOUTSIDE (alkp1);
+	double ll =  costOUTSIDE (tpuc1);
+	double mm =  costOUTSIDE (hdl1);
+	double nn =  costOUTSIDE (glu1);
+	double oo =  costOUTSIDE (ureal1); 
+	double pp =  costOUTSIDE (ckl1);
+	double qq =  costOUTSIDE(ca1);
+	double rr =  costOUTSIDE (d_bils1);
+	double ss =  costOUTSIDE(mg1);
+	double tt =  costOUTSIDE(cleaner1);
+	double uu =  costOUTSIDE (ast1);
+	double vv =  costOUTSIDE (alt1);
+	double ww=  costOUTSIDE (trig1);
+
+	myFile << "Non-BCM (academic) prices: " << endl;
+	myFile << "GGT: $" << a << endl;
+	myFile << "LDH: $" << b << endl;
+	myFile << "LDL: $" << c << endl;
+	myFile << "CHOL: $" << d << endl;
+	myFile << "ALB: $" << e << endl;
+	myFile << "TP: $" << f << endl;
+	myFile << "PHOS: $" << g << endl;
+	myFile << "TOTAL BILIRUBIN: $" << h << endl;
+	myFile << "CREA: $" << i << endl;
+	myFile << "CO2: $" << j << endl;
+	myFile << "ALKP: $" << k << endl;
+	myFile << "TPUC: $" << l << endl;
+	myFile << "HDL: $" << m << endl; 
+	myFile << "GLU: $" << n << endl;
+	myFile << "UREAL: $" << o << endl;
+	myFile << "CKL: $" << p << endl;
+	myFile << "CA: $" << q << endl;
+	myFile << "DIRECT BILIRUBIN: $" << r << endl;
+	myFile << "MG: $" << s << endl;
+	myFile << "CLEANER: $" << t << endl;
+	myFile << "AST: $" << u << endl;
+	myFile << "ALT: $" << v << endl;
+	myFile << "TRIG: $" << w << endl;
+	myFile << endl;
+	myFile << "Non-academic institution prices:" << endl;
+
+	myFile << "GGT: $" << aa << endl;
+	myFile << "LDH: $" << bb << endl;
+	myFile << "LDL: $" << cc << endl;
+	myFile << "CHOL: $" << dd << endl;
+	myFile << "ALB: $" << ee << endl;
+	myFile << "TP: $" << ff << endl;
+	myFile << "PHOS: $" << gg << endl;
+	myFile << "TOTAL BILIRUBIN: $" << hh << endl;
+	myFile << "CREA: $" << ii << endl;
+	myFile << "CO2: $" << jj << endl;
+	myFile << "ALKP: $" << kk << endl;
+	myFile << "TPUC: $" << ll << endl;
+	myFile << "HDL: $" << mm << endl; 
+	myFile << "GLU: $" << nn << endl;
+	myFile << "UREAL: $" << oo << endl;
+	myFile << "CKL: $" << pp << endl;
+	myFile << "CA: $" << qq << endl;
+	myFile << "DIRECT BILIRUBIN: $" << rr << endl;
+	myFile << "MG: $" << ss << endl;
+	myFile << "CLEANER: $" << tt << endl;
+	myFile << "AST: $" << uu << endl;
+	myFile << "ALT: $" << vv << endl;
+	myFile << "TRIG: $" << ww << endl;
+	myFile << "***********************************************" << endl;
+	myFile << endl;
 
 //**********************************************************************
        return 0; 
@@ -707,7 +810,7 @@ double wasteContainer_cost ()
 
 double techTime()
 {
-	double hourlyCost = 20;
+	double hourlyCost = 23.38;
 	double timePerHour = 0.33; //approx. 20 minutes to load controls, samples
 	double timeCost = hourlyCost * timePerHour; 
 	return timeCost; 

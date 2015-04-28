@@ -84,7 +84,8 @@ double sampleCups_cost ();
 double cleaner_solution();
 double wasteContainer_cost();
 
-
+double costNONBCM (double z);
+double costOUTSIDE (double y);
 
 
 #endif
