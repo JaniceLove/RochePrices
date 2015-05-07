@@ -3,7 +3,7 @@
 
 //Author: Janice Love
 //Date: 8-10-2014
-//Update: 3-16-2015
+//Update: 5-7-2015
 
 
 #include <iostream>
@@ -22,7 +22,7 @@ double maintenance();
 
 //variables for functions 
 double purchase_price = 84500; //from paperwork
-		int integraLife = 8; /*simple depreciation from 
+		int integraLife = 10; /*simple depreciation from 
 							  wikieducator.org/cost_and_financing_in
 							  _open_schooling/capital_costs/depreciating_
 							  capital_costs */ 
@@ -37,7 +37,7 @@ int bioRad_no_bottles = 12;
 int bioRad_no_days = 30; 
 
  //maintenance contract 
-		double contract_cost = 10000; 
+		double contract_cost = 4500; 
 		    //same daysUsed and average tests per day 
 
 
@@ -67,58 +67,58 @@ double alt;
 double trig;
 
 //variables pricelist
-double  cfasU_cost = 292.57; 
-double cfas_cost = 75.05; 		
-double pp_lipid_cost = 76.43;		
-double pnU_cost = 36.39; 
-double ppU_cost = 36.66; 
-double cfasL_cost = 57.38; 
-double cal_cost = 66.21; 
-double co2_norm_cost = 86.18; 		
-double co2_abnorm_cost = 85.98;
+double  cfasU_cost = 304.27; 
+double cfas_cost = 78.05; 		
+double pp_lipid_cost = 79.49;		
+double pnU_cost = 37.85; 
+double ppU_cost = 38.13; 
+double cfasL_cost = 59.68; 
+double cal_cost = 68.86; //C02
+double co2_norm_cost = 89.63; 		
+double co2_abnorm_cost = 89.42;
 double bio_rad_cost = 126;
 
 double bovine_cost= 97.20;
-double deproteinizer_cost = 23.40;
-double soln_1_cost = 23.40; 
-double soln_2_cost = 23.40; 
-double saline_cost = 64.10;
-double etcher_cost = 23.40;
-double ISE_direct_cost = 95.44;
+double deproteinizer_cost = 24.34;
+double soln_1_cost = 24.34; 
+double soln_2_cost = 24.34; 
+double saline_cost = 66.66;
+double etcher_cost = 24.34;
+double ISE_direct_cost = 99.26;
 double ISE_indirect_cost = 172;
-double reference_cost = 95.44;
-double mc_cost = 471.40;
-double sampleCup_cost = 51.66;
-double cleanerCost = 44.14;
-double waste_Container_cost = 132.42;
-double na_cost = 20.19;
-double cl_cost = 20.19;
-double k_cost = 20.19;
+double reference_cost = 99.26;
+double mc_cost = 490.26;
+double sampleCup_cost = 53.73;
+double cleanerCost = 45.91;
+double waste_Container_cost = 137.72;
+double na_cost =21.00;
+double cl_cost = 21.00;
+double k_cost = 21.00;
 
 //cost of cassettes
-double co2_cost = 13.86;
-double tpuc_cost = 247.60;
-double ureal_cost = 31.51;
-double ckl_cost = 101.82;
-double glu_cost = 50.90;
-double mg_cost = 21.40;
-double cleaner_cost = 44.14;
-double trig_cost = 21.40;
-double ldl_cost = 590.46;
-double chol_cost = 26.23;
-double alb_cost = 25.68;
-double tp_cost = 25.68;
-double phos_cost = 15.77;
-double t_bils_cost = 21.40;
-double crea_cost = 35.10;
-double alkp_cost = 17.12;
-double ca_cost = 25.68;
-double d_bils_cost = 27.80;
-double ast_cost = 41.43;
-double alt_cost = 42.80;
-double ggt_cost = 25.22;
-double ldh_cost = 25.69;
-double hdl_cost = 341.94; 
+double co2_cost = 14.41;
+double tpuc_cost = 257.50;
+double ureal_cost = 32.77;
+double ckl_cost = 105.89;
+double glu_cost = 52.94;
+double mg_cost = 15.58;
+double cleaner_cost = 45.91;
+double trig_cost = 22.26;
+double ldl_cost = 614.08;
+double chol_cost = 27.28;
+double alb_cost = 26.71;
+double tp_cost = 26.71;
+double phos_cost = 16.40;
+double t_bils_cost = 22.26;
+double crea_cost = 36.50;
+double alkp_cost = 17.80;
+double ca_cost = 26.71;
+double d_bils_cost = 28.91;
+double ast_cost = 43.09;
+double alt_cost = 44.51;
+double ggt_cost = 26.23;
+double ldh_cost = 26.72;
+double hdl_cost = 355.62; 
 
 //no of tests per cassette
 int ggt_no_tests = 400;
