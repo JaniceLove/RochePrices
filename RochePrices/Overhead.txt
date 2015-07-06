@@ -35,7 +35,7 @@ Waste Containers: $ 137.72
 CASSETTES PRICE LIST: 
 GGT: $ 26.23
 LDH: $ 26.72
-LDL: $ 614.08
+LDL: $ 597.57
 CHOL: $ 27.28
 ALB: $ 26.71
 TP: $ 26.71

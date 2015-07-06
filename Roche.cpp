@@ -22,14 +22,14 @@ double maintenance();
 
 //variables for functions 
 double purchase_price = 84500; //from paperwork
-		int integraLife = 10; /*simple depreciation from 
+		int integraLife = 20; /*simple depreciation from 
 							  wikieducator.org/cost_and_financing_in
 							  _open_schooling/capital_costs/depreciating_
 							  capital_costs */ 
 		double cost_depreciation_year = 16900; //current depreciated value-2015
-		double depreciation_per_year = 4225;
+		double depreciation_per_year = purchase_price / integraLife;
 		
-		int daysUsed = 52 * 5; 
+		int daysUsed = 365; 
 		int averageTestsPerDay = 5; 
 int co2_no_bottles = 5;
 int no_of_runs = 16;
@@ -104,7 +104,7 @@ double glu_cost = 52.94;
 double mg_cost = 15.58;
 double cleaner_cost = 45.91;
 double trig_cost = 22.26;
-double ldl_cost = 614.08;
+double ldl_cost = 597.57;
 double chol_cost = 27.28;
 double alb_cost = 26.71;
 double tp_cost = 26.71;
@@ -389,11 +389,11 @@ cleanSoln = cleaner_solution();
 		lipidChemControls = cfas_control + precinorm + ppU + ppL 
 						    + pnL + cfasL + act + dep + diluent;
  //cost of controls for individual tests 
-		indiv_controls = cfas_control + precinorm + ppU 
-						 + act + dep + diluent;
+		indiv_controls = ( cfas_control + precinorm + ppU 
+						 + act + dep + diluent) / 5;
  // controls for HDL/LDL individual costs
-		double lipid_individual = cfas_control + precinorm + ppU + pnL +
-			 act + dep + diluent + cfasL + ppL; 
+		double lipid_individual = ( cfas_control + precinorm + ppU + pnL +
+			 act + dep + diluent + cfasL + ppL) / 5; 
 
 //*************************************************************************
 
@@ -401,30 +401,30 @@ cleanSoln = cleaner_solution();
    cost_fp = labor + alt + ast + alkp + t_bils + d_bils + ureal + ca
 		   + chol + ckl + crea + ggt + glu + ldh + mg 
 		   + phos + alb + tp + trig + (mc * 21) + sampleCups
-		   + chemCostsControls + costPerDay + contract + cost_electrolytes
+		   + chemCostsControls + costPerDay /*+ contract*/ + cost_electrolytes
 		   + waste_container;
 //Rodent panel 
 	cost_rp = labor + alt + ast + ldh + ureal + crea + ckl + alb + tp + 
 		   (mc * 8) + sampleCups + chemCostsPanels + costPerDay
-		   + contract + waste_container;
+		   /*+ contract */+ waste_container;
 //Cardiac panel
 	cost_cardiac = labor + ckl + ldh + chol + trig + hdl + ldl +
 			 (mc * 6) + sampleCups + lipidChemControls + costPerDay
-			 + contract + waste_container; 
+			 /*+ contract*/ + waste_container; 
 //Lipid panel 
 	cost_lipidPanel = labor + chol + trig + hdl + ldl + lipidChemControls + costPerDay 
-		 +  (mc * 4) + sampleCups + contract + waste_container; 
+		 +  (mc * 4) + sampleCups + /*contract*/ + waste_container; 
 //Liver panel 
 	cost_liverPanel = labor + alt + ast + alkp + t_bils + d_bils + ldh + alb + tp
-			 + chemCostsPanels + (mc * 8) + costPerDay + contract + waste_container;
+			 + chemCostsPanels + (mc * 8) + costPerDay /*+ contract*/ + waste_container;
 //Kidney panel 
     cost_kp = labor + ureal + ca + phos + crea + alb + tp + (mc * 6) 
-			  + chemCostsPanels + costPerDay +  contract + waste_container;
+			  + chemCostsPanels + costPerDay + /* contract +*/  waste_container;
 //electrolytes 
-	cost_electrolytes = costPerDay + ise_cost + sampleCups + contract + waste_container;
+	cost_electrolytes = costPerDay + ise_cost + sampleCups /*+ contract*/ + waste_container;
 //Urine full panel 
 	cost_up = glu + tpuc + mg + ca + crea + phos + ureal + ise_cost + costPerDay
-			 + (mc * 7) + contract + waste_container;
+			 + (mc * 7) + /*contract*/  + waste_container;
 
        myFile << "Cost of full panel: " << "$ " << cost_fp << endl;
 	   myFile << "Cost of rodent panel: " << "$ " << cost_rp << endl;
@@ -945,50 +945,50 @@ double cfasUrine (double cfasU_cost)
 double cfas (double cfas_cost)
 {	
 	int cfas_no_bottles = 12;
-	int cfas_no_days = 5; 
-	double cfas = (cfas_cost / cfas_no_bottles ) / cfas_no_days;
-			//cost per day 
+	int cfas_no_runs = 8; 
+	double cfas = (cfas_cost / cfas_no_bottles ) / cfas_no_runs;
+			//cost per run 
 	return cfas; 
 }
 double precipath_lipid (double pp_lipid_cost)
 {	
 	int pp_lipid_no_bottles = 4;
-	int pp_lipid_no_days = 5; 
+	int pp_lipid_no_runs = 8; 
 	double precipath_lipid = (pp_lipid_cost / pp_lipid_no_bottles) /
-			pp_lipid_no_days;
+			pp_lipid_no_runs;
 	return precipath_lipid; //cost per day 
 }
 double precinorm_lipid (double pn_lipid_cost)
 {	
 	int pnl_noBottles = 4;
-	int pnl_no_days = 5; 
+	int pnl_no_runs = 8; 
 	double precinorm_lipid = (pn_lipid_cost / pnl_noBottles) / 
-			pnl_no_days; 
+			pnl_no_runs; 
 
-	return precinorm_lipid; //cost per day 
+	return precinorm_lipid; //cost per run 
 }
 double precinorm_U (double pnU_cost)
 {	
 	int pnU_no_bottles = 10;
-	int no_of_days = 5; 
-	double precinormU = (pnU_cost / pnU_no_bottles) / no_of_days;
-			//cost/day
+	int no_of_runs1 = 8; 
+	double precinormU = (pnU_cost / pnU_no_bottles) / no_of_runs1;
+			//cost/run
 	return precinormU;
 }
 double precipath_U (double ppU_cost)
 {	
 	int ppU_no_bottles = 10;
-		//same number of days 
+	int no_of_runs1 = 8;
 		
-	double precipathU = (ppU_cost / ppU_no_bottles) / no_of_days;
-	return precipathU; //cost/day
+	double precipathU = (ppU_cost / ppU_no_bottles) / no_of_runs1;
+	return precipathU; //cost/run
 }
 double cfasLipids (double cfasL_cost)
 {	
 	int cfasL_no_bottles = 10;
-		//same number of days
-	double cfas_lipid = (cfasL_cost / cfasL_no_bottles) / no_of_days;
-			//cost per day
+	int no_of_runsll = 3;
+	double cfas_lipid = (cfasL_cost / cfasL_no_bottles) / no_of_runsll;
+			//cost per run
 	return cfas_lipid;
 }
 
