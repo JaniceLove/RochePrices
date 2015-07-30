@@ -1,22 +1,14 @@
-﻿Build started 7/6/2015 3:26:04 PM.
-     1>Project "C:\Users\jmlove\Documents\Visual Studio 2010\Projects\RochePrices\RochePrices\RochePrices.vcxproj" on node 2 (build target(s)).
-     1>InitializeBuildStatus:
-         Creating "Debug\RochePrices.unsuccessfulbuild" because "AlwaysCreate" was specified.
-       ClCompile:
-         c:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ..\Roche.cpp
+﻿Build started 7/27/2015 12:14:19 PM.
+     1>Project "C:\Users\jmlove\Documents\Visual Studio 2010\Projects\RochePrices\RochePrices\RochePrices.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt ..\Roche.cpp
          Roche.cpp
        Link:
-         c:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\jmlove\Documents\Visual Studio 2010\Projects\RochePrices\Debug\RochePrices.exe" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\RochePrices.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\jmlove\Documents\Visual Studio 2010\Projects\RochePrices\Debug\RochePrices.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\jmlove\Documents\Visual Studio 2010\Projects\RochePrices\Debug\RochePrices.lib" /MACHINE:X86 Debug\iseSupplies.obj
+         C:\Program Files\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\jmlove\Documents\Visual Studio 2010\Projects\RochePrices\Debug\RochePrices.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:\Users\jmlove\Documents\Visual Studio 2010\Projects\RochePrices\Debug\RochePrices.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\jmlove\Documents\Visual Studio 2010\Projects\RochePrices\Debug\RochePrices.lib" /MACHINE:X86 Debug\iseSupplies.obj
          Debug\Roche.obj
-         LINK : C:\Users\jmlove\Documents\Visual Studio 2010\Projects\RochePrices\Debug\RochePrices.exe not found or not built by the last incremental link; performing full link
          RochePrices.vcxproj -> C:\Users\jmlove\Documents\Visual Studio 2010\Projects\RochePrices\Debug\RochePrices.exe
-       Manifest:
-         C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Users\jmlove\Documents\Visual Studio 2010\Projects\RochePrices\Debug\RochePrices.exe;#1" /manifest Debug\RochePrices.exe.intermediate.manifest
-       FinalizeBuildStatus:
-         Deleting file "Debug\RochePrices.unsuccessfulbuild".
-         Touching "Debug\RochePrices.lastbuildstate".
-     1>Done Building Project "C:\Users\jmlove\Documents\Visual Studio 2010\Projects\RochePrices\RochePrices\RochePrices.vcxproj" (build target(s)).
+     1>Done Building Project "C:\Users\jmlove\Documents\Visual Studio 2010\Projects\RochePrices\RochePrices\RochePrices.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:00.98
+Time Elapsed 00:00:01.26
